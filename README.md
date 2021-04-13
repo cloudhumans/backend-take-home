@@ -7,7 +7,7 @@ Cloud Humans determines which project a new Pro will tackle based on the answers
 For this assignment, you will create a simple version of that application by coding an API endpoint that receives a JSON payload with the Pro application and returns a JSON response with the selected project – you don’t have to worry about the frontend of the application. 
 
 ## The input
-First, the would-be frontend of this application asks the Pro for her personal information**. Then, it lets her add her **house** and **vehicle**. Finally, it asks her to answer 3 binary **risk questions**. The result produces a JSON payload, posted to the application’s API endpoint, like this example:
+The would-be frontend of this application would ask the Pros for their personal information and then it would send to your API a payload following this contract:
 
 ```JSON
 {
@@ -51,26 +51,29 @@ Valid referral code + 1 point
 5. If her writing score is lower than 0.3 she is deducted in 1 point. If between 0.3 and 0.7 she receives 1 point. If greather than 0.7 she receives 2 points.
 6. If the referral code is valid (consider the value "token1234" as valid) she receives 1 score point.
 
-With the **final score** resulting from this algorithm we have to determine which projects the Pro is eligible for, as each project has it's own complexity:
+With the **final score** resulting from this algorithm we have to determine which projects the Pro is eligible for, as each project has it's own complexity and requires different skills. And then we pair the Pro with the first critical project she is eligible for, based on this sorted **project list** below: 
 
-1. The project "Collect specific people information from their social media" requires Pros with score greater than 2
-2. The project "Attend to users support for a hardware company" requires Pros with score greater than 3 
-3. The project "Determine if the Schrodinger's cat is alive" requires Pros with score greater than 5 
-4. The project "Calculate the Dark Matter of the universe" requires Pros with score greater than 10
+1. The project "Calculate the Dark Matter of the universe for Nasa" requires Pros with score greater than 10
+2. The project "Determine if the Schrodinger's cat is alive" requires Pros with score greater than 5 
+3. The project "Attend to users support for a YXZ Company" requires Pros with score greater than 3 
+4. The project "Collect specific people information from their social media for XPTO Company" requires Pros with score greater than 2
 
 ## The output
 Considering the data provided above, the application should return the following JSON payload:
 
 ```JSON
 {
-    "selected_project": "support_for_a_hardware_company"
+    "score": 7,
+    "selected_project": "determine_schrodinger_cat_is_alive",
+    "eligible_projects": ["collect_information_for_xpto", "support_users_from_xyz", "determine_schrodinger_cat_is_alive"],
+    "ineligible_projects": ["calculate_dark_matter_nasa"]
 }
 ```
 
 ## Criteria
 You may use any language and framework provided that you build a solid system with an emphasis on code quality, simplicity, readability, maintainability, and reliability, particularly regarding architecture and testing.
 
-Be aware that Origin will mainly take into consideration the following evaluation criteria:
+Be aware that we will mainly take into consideration the following evaluation criteria:
 * How clean and organized your code is;
 * If you implemented the business rules correctly;
 * How good your automated tests are (qualitative over quantitative).
@@ -80,7 +83,5 @@ Other important notes:
 * Add to the README file: (1) instructions to run the code; (2) what were the main technical decisions you made; (3) relevant comments about your project 
 * You must use English in your code and also in your docs
 
-This assignment should be doable in less than one day. We expect you to learn fast, **communicate with us**, and make decisions regarding its implementation & scope to achieve the expected results on time.
-
-It is not necessary to build the screens the Pros would interact with, however, as the API is intended to power a user-facing application, we expect the implementation to be as close as possible to what would be necessary in real-life. Consider another developer would get your project/repository to evolve and implement new features from exactly where you stopped. 
+This assignment should be doable in less than one day. We expect you to learn fast, communicate with us if you need, and make decisions regarding its implementation & scope to achieve the expected results on time.
 
