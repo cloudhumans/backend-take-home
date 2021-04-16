@@ -65,7 +65,7 @@ Considering the data provided above, the application should return the following
 {
     "score": 7,
     "selected_project": "determine_schrodinger_cat_is_alive",
-    "eligible_projects": ["collect_information_for_xpto", "support_users_from_xyz", "determine_schrodinger_cat_is_alive"],
+    "eligible_projects": ["determine_schrodinger_cat_is_alive", "support_users_from_xyz", "collect_information_for_xpto"],
     "ineligible_projects": ["calculate_dark_matter_nasa"]
 }
 ```
