@@ -1,4 +1,4 @@
-# CLoud Humans - Backend Take Home Assignment
+# Cloud Humans - Backend Take Home Assignment
 
 People are the fuel that moves Cloud Humans. In order to speed up the company we need to be great at pairing people (we call them Pros) to problems as faster as possible. 
 
