@@ -1,6 +1,6 @@
 # Cloud Humans - Backend Take Home Assignment
 
-People are the fuel that moves Cloud Humans. In order to speed up the company we need to be great at pairing people (we call them Pros) to problems as faster as possible. 
+People are the fuel that moves Cloud Humans. In order to speed up the company we need to be great at pairing people (we call them Pros) to problems as fast as possible. 
 
 Cloud Humans determines which project a new Pro will tackle based on the answers they provide in the Pro Portal (a frontend application). The frontend send this Pro's **application** to an API that runs an algorithm upon the data and returns the project in which the Pro will be allocated. 
 
