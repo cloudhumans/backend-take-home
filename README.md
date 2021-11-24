@@ -42,8 +42,6 @@ The application receives the JSON payload through the API endpoint and returns t
 First, it calculates an **eligibility score** by giving points to each information provided, based on these current rules:
 
 
-Valid referral code + 1 point
-
 1. If the Pro is under age, she is ineligible to be paired with any project
 2. If the Pro education level is "high_school" she receives 1 score point, if it is "bachelors_degree_or_high" she receives 2
 3. If the Pro has experience with sales and/or support she receives 5 and 3 score points respectively
