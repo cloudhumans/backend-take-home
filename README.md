@@ -51,10 +51,10 @@ First, it calculates an **eligibility score** by giving points to each informati
 
 With the **final score** resulting from this algorithm we have to determine which projects the Pro is eligible for, as each project has it's own complexity and requires different skills. And then we pair the Pro with the first critical project she is eligible for, based on this sorted **project list** below: 
 
-1. The project "Calculate the Dark Matter of the universe for Nasa" requires Pros with score greater than 10
-2. The project "Determine if the Schrodinger's cat is alive" requires Pros with score greater than 5 
-3. The project "Attend to users support for a YXZ Company" requires Pros with score greater than 3 
-4. The project "Collect specific people information from their social media for XPTO Company" requires Pros with score greater than 2
+1. The project `"Calculate the Dark Matter of the universe for Nasa"` requires Pros with score greater than 10
+2. The project `"Determine if the Schrodinger's cat is alive"` requires Pros with score greater than 5 
+3. The project `"Attend to users support for a YXZ Company"` requires Pros with score greater than 3 
+4. The project `"Collect specific people information from their social media for XPTO Company"` requires Pros with score greater than 2
 
 ## The output
 Considering the data provided above, the application should return the following JSON payload:
