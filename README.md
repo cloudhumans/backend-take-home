@@ -30,7 +30,7 @@ The would-be frontend of this application would ask the Pros for their personal 
 All attributes are required except for the referral_code.
 
 - Age: an integer equal or greater than 0.
-- Education Level: `"no_education"` `"high_school"` or `"bachelors_degree_or_high"`)
+- Education Level: `"no_education"`, `"high_school"` or `"bachelors_degree_or_high"`)
 - Past experiences: JSON object with bool attributes `sales` and `support`
 - Internet Test: JSON object with the result of an internet test already made by the frontend (the attributes are positive floats, where 50.4 == 50.4 megabytes)
 - Writing Score: float between 0 and 1
